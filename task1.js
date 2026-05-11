@@ -1,8 +1,10 @@
 // Task :-  “Don’t run code immediately. First think → predict → then run.”
 
+
 // Section 1: Variables (1–8) 
 
 //1. What is the output?
+
 
     var a = 10;
     a = 15;
