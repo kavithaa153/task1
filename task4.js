@@ -13,7 +13,7 @@ function welcomeUser(name) {
 
 }
 
-welcomeUser("Naveen");
+welcomeUser("Naveen"); // Output : Welcome Naveen
 
 //===========================================================================================================
 
@@ -33,7 +33,7 @@ function squareNumber(num) {
 
 }
 
-console.log(squareNumber(5));
+console.log(squareNumber(5)); // Output : 25
 
 //=============================================================================================================
 
@@ -59,9 +59,9 @@ function employeeBonus(bonus) {
 
     };
 
-    console.log(employee.name);
+    console.log(employee.name); // Output : Rahul
 
-    console.log(employee.salary + bonus);
+    console.log(employee.salary + bonus); // Output : 55000
 
 }
 
@@ -88,16 +88,16 @@ function scopeCheck() {
 
         const c = "I am const variable";
 
-        console.log(a);
+        console.log(a); // Output : I am var variable
 
-        console.log(b);
+        console.log(b); // Output : I am let variable
 
-        console.log(c);
+        console.log(c); // Output : I am const variable
 
     }
 
     // var works outside block
-    console.log(a);
+    console.log(a); // Output : I am var variable
 
     // let gives error outside block
     // console.log(b);
@@ -123,7 +123,7 @@ const add = (a, b) => {
 
 };
 
-add(10, 20);
+add(10, 20); // Output : 30
 
 //==================================================================================================
 
@@ -152,7 +152,7 @@ function calculator(callback, num1, num2) {
 
 }
 
-calculator(multiply, 5, 2);
+calculator(multiply, 5, 2); // Output : 10
 
 //=======================================================================================
 
@@ -179,11 +179,11 @@ function* offers() {
 
 let offerResult = offers();
 
-console.log(offerResult.next().value);
+console.log(offerResult.next().value); // Output : 50% OFF
 
-console.log(offerResult.next().value);
+console.log(offerResult.next().value); // Output : Free Delivery
 
-console.log(offerResult.next().value);
+console.log(offerResult.next().value); // Output : Cashback
 
 //=======================================================================
 
@@ -202,9 +202,15 @@ function student(name, course = "JavaScript") {
 
 }
 
-student("Naveen");
+student("Naveen"); 
+// Output :
+// Name : Naveen
+// Course : JavaScript
 
 student("Rahul", "Python");
+// Output :
+// Name : Rahul
+// Course : Python
 
 //=========================================================================================
 
@@ -229,7 +235,7 @@ function multi(m1) {
 
 }
 
-console.log(multi(2)(3)(4));
+console.log(multi(2)(3)(4)); // Output : 24
 
 //========================================================================================
 
@@ -246,7 +252,7 @@ let arr2 = [4, 5, 6];
 
 let mergedArray = [...arr1, ...arr2];
 
-console.log(mergedArray);
+console.log(mergedArray); // Output : [1,2,3,4,5,6]
 
 //================================================================================================
 
@@ -280,6 +286,11 @@ let mergedObject = {
 };
 
 console.log(mergedObject);
+// Output :
+// {
+//   name:"Navi",
+//   role:"Developer"
+// }
 
 //===============================================================================
 
@@ -312,6 +323,9 @@ function numbers(...num) {
 }
 
 numbers(1, 2, 3, 4);
+// Output :
+// [1,2,3,4]
+// 10
 
 //===============================================================================================================
 
@@ -401,3 +415,8 @@ calculateMarks(bonusMarks);
 // Rest operator
 
 printStudents("Ramya", "Kavitha", "Naveen");
+
+// Output :
+// Students Added Successfully
+// Bonus Marks Added
+// Student Names Printed
