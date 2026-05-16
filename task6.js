@@ -107,11 +107,13 @@ function employeeSalary(){
         name:"Sahana",
         Salary:25000
 
-    },{
+    },
+    {
 
         name:"Kavitha",
         Salary:50000
-    },{
+    },
+    {
         name:"Srinivasan",
         Salary:60000
     },
@@ -120,9 +122,13 @@ function employeeSalary(){
         Salary:60000
     }]
 
+
  let  filteredEmployees = arr.filter((arr)=>{
+
         return arr.Salary > 50000
+
     })
+
     console.log(filteredEmployees);
     
 }
