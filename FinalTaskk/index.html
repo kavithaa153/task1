@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KavithaStore</title>
+
+  
+
+    <link rel="stylesheet" href="./style.css">
+
+   
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+    rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+     
+
+    <header class="navbar">
+
+      
+
+        <h1 class="logo">
+
+            KavithaStore
+
+        </h1>
+ 
+
+        <div class="search-box">
+
+            <input
+            type="text"
+            id="searchInput"
+            placeholder="Search Products..."
+            >
+
+        </div>
+
+     
+
+        <div class="cart">
+
+            <button class="cart-btn" id="openCart">
+
+                <i class="ri-shopping-cart-2-line"></i>
+
+                <span id="cartCount">
+
+                    0
+
+                </span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+ 
+
+    <section class="category-section">
+
+        <button class="category-btn active">
+
+            All
+
+        </button>
+
+        <button class="category-btn">
+
+            electronics
+
+        </button>
+
+        <button class="category-btn">
+
+            jewelery
+
+        </button>
+
+        <button class="category-btn">
+
+            men's clothing
+
+        </button>
+
+        <button class="category-btn">
+
+            women's clothing
+
+        </button>
+
+    </section>
+
+ 
+
+    <h2 id="loading">
+
+        Loading Products...
+
+    </h2>
+
+ 
+
+    <main id="Container">
+
+    </main>
+
+ 
+
+    <section class="cart-section" id="cartSection">
+
+        <div class="cart-header">
+
+            <h2>
+
+                Shopping Cart
+
+            </h2>
+
+            <button id="closeCart">
+
+                X
+
+            </button>
+
+        </div>
+
+        <div id="cartItems">
+
+        </div>
+
+        <h3 id="totalPrice">
+
+            Total : ₹ 0
+
+        </h3>
+
+    </section>
+
+ 
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <h2 class="footer-logo">
+
+                    KavithaStore
+
+                </h2>
+
+                <p class="footer-text">
+
+                    Premium shopping experience with
+                    fashion, electronics, beauty products
+                    and more.
+
+                </p>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>
+
+                    Quick Links
+
+                </h3>
+
+                <a href="#">Home</a>
+
+                <a href="#">Products</a>
+
+                <a href="#">Cart</a>
+
+                <a href="#">Contact</a>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>
+
+                    Follow Us
+
+                </h3>
+
+                <div class="social-icons">
+
+                    <i class="ri-instagram-line"></i>
+
+                    <i class="ri-linkedin-box-line"></i>
+
+                    <i class="ri-github-line"></i>
+
+                    <i class="ri-facebook-circle-line"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 KavithaStore | All Rights Reserved
+
+        </div>
+
+    </footer>
+
+    
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

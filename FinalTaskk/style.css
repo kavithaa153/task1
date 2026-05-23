@@ -1,0 +1,455 @@
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+
+}
+
+body{
+
+    background: #edf4ff;
+
+}
+
+.navbar{
+
+    width: 100%;
+
+    padding: 20px 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: rgba(255,255,255,0.8);
+
+    backdrop-filter: blur(10px);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+}
+
+.logo{
+
+    font-size: 50px;
+
+    color: #2563eb;
+
+}
+
+.search-box input{
+
+    width: 650px;
+
+    padding: 16px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 40px;
+
+    font-size: 18px;
+
+    background: #f4f4f4;
+
+}
+
+.cart-btn{
+
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 16px 22px;
+
+    border-radius: 16px;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+}
+
+
+.category-section{
+
+    width: 90%;
+
+    margin: 30px auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+.category-btn{
+
+    border: none;
+
+    padding: 14px 24px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    background: white;
+
+    transition: 0.3s;
+
+}
+
+.category-btn:hover{
+
+    background: #2563eb;
+
+    color: white;
+
+}
+
+.active{
+
+    background: #2563eb;
+
+    color: white;
+
+}
+
+#loading{
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-size: 30px;
+
+    color: #2563eb;
+
+}
+
+#Container{
+
+    width: 95%;
+
+    margin: 40px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+
+    gap: 25px;
+
+}
+
+.card{
+
+    background: white;
+
+    border-radius: 24px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    box-shadow: 0px 6px 16px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+
+}
+
+.card:hover{
+
+    transform: translateY(-10px);
+
+}
+
+.card img{
+
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: contain;
+
+}
+
+.card h3{
+
+    margin-top: 15px;
+
+    font-size: 22px;
+
+}
+
+.description{
+
+    margin: 15px 0;
+
+    color: gray;
+
+    line-height: 1.6;
+
+}
+
+.price{
+
+    font-size: 24px;
+
+    color: green;
+
+    margin-bottom: 15px;
+
+}
+
+.card button{
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 12px;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+}
+
+.cart-section{
+
+    position: fixed;
+
+    top: 0;
+
+    right: -100%;
+
+    width: 420px;
+
+    height: 100vh;
+
+    background: white;
+
+    padding: 25px;
+
+    z-index: 3000;
+
+    transition: 0.4s;
+
+    overflow-y: auto;
+
+    box-shadow: -4px 0px 20px rgba(0,0,0,0.15);
+
+}
+
+.show-cart{
+
+    right: 0;
+
+}
+
+.cart-header{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+
+}
+
+.cart-header h2{
+
+    color: #2563eb;
+
+    font-size: 32px;
+
+}
+
+#closeCart{
+
+    border: none;
+
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 50%;
+
+    background: red;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+}
+
+.cart-card{
+
+    border-bottom: 1px solid #ddd;
+
+    padding: 18px 0;
+
+}
+
+.cart-card h4{
+
+    margin-bottom: 10px;
+
+}
+
+.remove-btn{
+
+    border: none;
+
+    background: red;
+
+    color: white;
+
+    padding: 10px 16px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+
+}
+
+#totalPrice{
+
+    margin-top: 30px;
+
+    font-size: 28px;
+
+    color: green;
+
+}
+
+.footer{
+
+    background: #0f172a;
+
+    color: white;
+
+    padding: 60px 10%;
+
+}
+
+.footer-container{
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+    gap: 40px;
+
+}
+
+.footer-logo{
+
+    font-size: 36px;
+
+    color: #3b82f6;
+
+}
+
+.footer-text{
+
+    margin-top: 15px;
+
+    line-height: 1.8;
+
+    color: #cbd5e1;
+
+}
+
+.footer-box h3{
+
+    margin-bottom: 20px;
+
+}
+
+.footer-box a{
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    text-decoration: none;
+
+    color: #cbd5e1;
+
+}
+
+.social-icons{
+
+    display: flex;
+
+    gap: 15px;
+
+    font-size: 28px;
+
+}
+
+.footer-bottom{
+
+    margin-top: 40px;
+
+    text-align: center;
+
+    color: #94a3b8;
+
+}
+
+
+@media(max-width:768px){
+
+    .navbar{
+
+        flex-direction: column;
+
+        gap: 20px;
+
+    }
+
+    .search-box input{
+
+        width: 100%;
+
+    }
+
+    .cart-section{
+
+        width: 100%;
+
+    }
+
+}
