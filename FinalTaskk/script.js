@@ -1,6 +1,5 @@
 
-const api = "https://fakestoreapi.com/products";
-// const api = "https://fakestoreapi.com/productss";   // Error Fetching Products (Wrong Api) testing
+const api = "https://fakestoreapi.com/products"; 
 
 
 const container = document.querySelector("#Container");
